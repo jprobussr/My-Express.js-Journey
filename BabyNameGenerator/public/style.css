@@ -1,0 +1,79 @@
+/* Basic reset for padding and margin */
+body,
+h1,
+label,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+/* Background and text colors for the night theme */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px; /* Adding padding to prevent elements from hitting screen edges */
+}
+
+/* Style the header */
+h1 {
+  margin-bottom: 20px;
+  color: #ffb74d; /* Soft orange for contrast */
+  text-align: center; /* Centering the header */
+}
+
+/* Form styling */
+form {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #ffcc80; /* Light orange for labels */
+}
+
+/* Input styling */
+input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #555555;
+  border-radius: 4px;
+  background-color: #222222;
+  color: #e0e0e0;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width */
+}
+
+/* Submit button styling */
+input[type='submit'] {
+  background-color: #ff9800;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Ensures padding is included in the element's total width */
+}
+
+input[type='submit']:hover {
+  background-color: #fb8c00;
+}

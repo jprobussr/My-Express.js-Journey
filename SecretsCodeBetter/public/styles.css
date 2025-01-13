@@ -1,0 +1,57 @@
+/* Dark Ocean Beach Theme */
+
+body {
+  background-color: #001f3f; /* Dark blue like the deep ocean */
+  color: #ffffff; /* White text color for contrast */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #66d4ff; /* Light blue to resemble ocean waves */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label,
+input[type='text'],
+input[type='submit'] {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+input[type='text'] {
+  padding: 10px;
+  border: 2px solid #66d4ff;
+  border-radius: 5px;
+  background-color: #002a4d;
+  color: #ffffff;
+}
+
+input[type='submit'] {
+  background-color: #66d4ff;
+  color: #001f3f;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type='submit']:hover {
+  background-color: #004080;
+}
+
+
+

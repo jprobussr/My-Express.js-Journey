@@ -1,0 +1,16 @@
+{
+  "name": "secretscodebetter",
+  "version": "1.0.0",
+  "description": "Learn Express with Practice Projects",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Probus",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2"
+  }
+}
