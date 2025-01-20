@@ -1,0 +1,85 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #2a1a4f; /* Dark purplish background */
+  color: #eaeaea; /* Light text color for contrast */
+  padding: 0;
+  margin: 0;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #3c2a70; /* Slightly lighter purple for the main area */
+  border-radius: 8px;
+}
+
+/* Header */
+header h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #f1c40f; /* Gold accent color */
+}
+
+/* Main Content Styling */
+ul {
+  list-style-type: none;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+/* List Item Styling */
+ul li {
+  background-color: #4e3076; /* Darker purple for list items */
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+ul li:hover {
+  background-color: #5e3886; /* Lighter purple on hover */
+  color: #f1c40f; /* Change text color to gold on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  ul li {
+    font-size: 1em;
+    padding: 12px;
+  }
+}
+
+/* Desktop-friendly Layout */
+@media (min-width: 1024px) {
+  .container {
+    padding: 40px;
+  }
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  ul li {
+    font-size: 1.2em;
+    padding: 20px;
+  }
+}

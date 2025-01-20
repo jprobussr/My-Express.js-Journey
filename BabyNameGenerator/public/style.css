@@ -1,10 +1,8 @@
 /* Basic reset for padding and margin */
-body,
-h1,
-label,
-input {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Background and text colors for the night theme */
@@ -36,14 +34,15 @@ form {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   width: 100%;
   max-width: 400px;
-  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+  /* box-sizing: border-box;  */
+  /* Ensures padding is included in the element's total width and height */
 }
 
 /* Label styling */
 label {
   display: block;
   margin-bottom: 8px;
-  font-size: 16px;
+  font-size: 18px;
   color: #ffcc80; /* Light orange for labels */
 }
 

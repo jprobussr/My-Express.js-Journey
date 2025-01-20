@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Running JS in HTML</title>
+    <style>
+      body {
+        background-color: black;
+        color: aliceblue;
+      }
+
+      h1 {
+        color: rgb(218, 69, 218);
+      }
+
+      li {
+        color: blueviolet;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <p>Current Seconds: <%= seconds %></p>
+
+    <% if (seconds % 2 === 0) { %>
+        <ul>
+            <% items.forEach((fruit) => { %>
+                <li><%= fruit %></li>
+           <% }) %>
+        </ul>
+   <% } else { %>
+        <h2>No text to display</h2>
+   <%} %>
+
+
+   <p><%- htmlContent %></p>
+
+   <%- include('footer.ejs') %>
+
+  </body>
+</html>

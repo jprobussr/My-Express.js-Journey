@@ -3,28 +3,34 @@ import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-
 const app = express();
 const PORT = process.env.PORT || 3000;
-let babyName = '';
+
+let userIsAuthorized = false;
 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
-const babyNameGenerator = (req, res, next) => {
-  console.log(req.body);
-  babyName = req.body['street'] + ' ' + req.body['pet'];
+const passwordCheck = (req, res, next) => {
+  const password = req.body['password'];
+  if (password === 'brainTime') {
+    userIsAuthorized = true;
+  } 
   next();
 };
 
-app.use(babyNameGenerator);
+app.use(passwordCheck);
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
 
-app.post('/submit', (req, res) => {
-  res.send(`<h1>Your new baby name is ${babyName}.</h1>`);
+app.post('/check', (req, res) => {
+  if (userIsAuthorized) {
+    res.sendFile(__dirname + '/public/brainTips.html');
+  } else {
+    res.sendFile(__dirname + '/public/index.html');
+  }
 });
 
 app.listen(PORT, () => {

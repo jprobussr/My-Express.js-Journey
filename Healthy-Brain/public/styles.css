@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the page takes at least the full viewport height */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #4a148c; /* Purple background */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+main {
+  padding: 30px 0;
+  flex-grow: 1; /* Allows the main content to grow and push footer to the bottom */
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.brain-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.brain-info p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.8;
+  color: #555;
+}
+
+.password-form {
+  text-align: center;
+}
+
+.password-form label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #4a148c;
+}
+
+.password-form input[type='text'] {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.password-form input[type='submit'] {
+  padding: 10px 20px;
+  background-color: #4a148c;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.password-form input[type='submit']:hover {
+  background-color: #6a1b9a;
+}
+
+footer {
+  background-color: #4a148c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .brain-info p {
+    font-size: 1rem;
+  }
+
+  .password-form input[type='text'],
+  .password-form input[type='submit'] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .password-form input[type='submit'] {
+    font-size: 1.2rem;
+  }
+}
